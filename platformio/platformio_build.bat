@@ -11,7 +11,7 @@ rem git pull
 
 rem Build example(s)
 platformio ci --lib=".." --project-conf=platformio.ini ../examples/CRC32/CRC32.ino
-platformio ci --lib=".." --project-conf=platformio.ini ../examples/tests/CRC32Benchmark/CRC32Benchmark.ino
-platformio ci --lib=".." --project-conf=platformio.ini ../examples/tests/CRC32UnitTest/CRC32UnitTest.ino
+platformio ci --lib=".." --project-conf=platformio.ini ../tests/CRC32Benchmark/CRC32Benchmark.ino
+platformio ci --lib=".." --project-conf=platformio.ini ../tests/CRC32UnitTest/CRC32UnitTest.ino
 
 @pause

@@ -34,15 +34,15 @@ without CRC table allocations in RAM.
 
 Arduino IDE | Examples | Erriez CRC32:
 
-* [CRC32](https://github.com/Erriez/ErriezDHT22/blob/master/examples/CRC32/CRC32.ino)
-* tests | [CRC32UnitTest](https://github.com/Erriez/ErriezCRC32/blob/master/examples/CRC32UnitTest/CRC32UnitTest.ino)
+* [CRC32](https://github.com/Erriez/ErriezCRC32/blob/master/examples/CRC32/CRC32.ino)
+* tests | [CRC32UnitTest](https://github.com/Erriez/ErriezCRC32/blob/master/tests/CRC32UnitTest/CRC32UnitTest.ino)
 
 
 ## Benchmarks
 
 Arduino IDE | Examples | Erriez CRC32:
 
-* tests | [CRC32Benchmark](https://github.com/Erriez/ErriezCRC32/blob/master/examples/CRC32Benchmark/CRC32Benchmark.ino)
+* tests | [CRC32Benchmark](https://github.com/Erriez/ErriezCRC32/blob/master/tests/CRC32Benchmark/CRC32Benchmark.ino)
 
 
 #### Benchmark results on buffers
