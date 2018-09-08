@@ -1,7 +1,7 @@
 # Optimized CRC32 library for Arduino
 [![Build Status](https://travis-ci.org/Erriez/ErriezCRC32.svg?branch=master)](https://travis-ci.org/Erriez/ErriezCRC32)
 
-This is a target independent, flash size optimized CRC32 library for Arduino without CRC tables.
+This is a target independent, flash and RAM size optimized CRC32 library for Arduino without CRC tables.
 
 ![CRC32](https://raw.githubusercontent.com/Erriez/ErriezCRC32/master/extras/CRC32.png)
 
