@@ -1,0 +1,125 @@
+\hypertarget{_erriez_c_r_c32_8c}{}\section{Erriez\+C\+R\+C32.\+c File Reference}
+\label{_erriez_c_r_c32_8c}\index{Erriez\+C\+R\+C32.\+c@{Erriez\+C\+R\+C32.\+c}}
+
+
+Flash size optimized C\+R\+C32 library for Arduino without using C\+RC tables.  
+
+
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Erriez\+C\+R\+C32.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{_erriez_c_r_c32_8c_a548a44aa16d59630321dd9618dfec05d}{crc32\+String} (const char $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Calculate C\+RC on a character string. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{_erriez_c_r_c32_8c_a5137a33a1232971b8e5472e99b558a06}{crc32\+Buffer} (const void $\ast$buffer, size\+\_\+t buffer\+Length)
+\item 
+uint32\+\_\+t \hyperlink{_erriez_c_r_c32_8c_afb56d3040e9cf76ede38b02c963cdc2c}{crc32\+Update} (const void $\ast$buffer, size\+\_\+t buffer\+Length, uint32\+\_\+t crc)
+\begin{DoxyCompactList}\small\item\em Calculate C\+RC on multiple buffers. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{_erriez_c_r_c32_8c_a86b00eb7f1d8dbcddd50d0210b29a4c3}{crc32\+Final} (uint32\+\_\+t crc)
+\begin{DoxyCompactList}\small\item\em Finalize C\+R\+C32 output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Flash size optimized C\+R\+C32 library for Arduino without using C\+RC tables. 
+
+Source\+: \href{https://github.com/Erriez/ErriezCRC32}{\tt https\+://github.\+com/\+Erriez/\+Erriez\+C\+R\+C32} Documentation\+: \href{https://erriez.github.io/ErriezCRC32}{\tt https\+://erriez.\+github.\+io/\+Erriez\+C\+R\+C32} 
+
+\subsection{Function Documentation}
+\index{Erriez\+C\+R\+C32.\+c@{Erriez\+C\+R\+C32.\+c}!crc32\+Buffer@{crc32\+Buffer}}
+\index{crc32\+Buffer@{crc32\+Buffer}!Erriez\+C\+R\+C32.\+c@{Erriez\+C\+R\+C32.\+c}}
+\subsubsection[{\texorpdfstring{crc32\+Buffer(const void $\ast$buffer, size\+\_\+t buffer\+Length)}{crc32Buffer(const void *buffer, size_t bufferLength)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t crc32\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buffer, }
+\item[{size\+\_\+t}]{buffer\+Length}
+\end{DoxyParamCaption}
+)}\hypertarget{_erriez_c_r_c32_8c_a5137a33a1232971b8e5472e99b558a06}{}\label{_erriez_c_r_c32_8c_a5137a33a1232971b8e5472e99b558a06}
+This function is thread safe and maybe called from interrupt handlers. No buffer alignment needed. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Input buffer. \\
+\hline
+{\em buffer\+Length} & Buffer length in Bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+32-\/bit C\+RC value. 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file Erriez\+C\+R\+C32.\+c.
+
+\index{Erriez\+C\+R\+C32.\+c@{Erriez\+C\+R\+C32.\+c}!crc32\+Final@{crc32\+Final}}
+\index{crc32\+Final@{crc32\+Final}!Erriez\+C\+R\+C32.\+c@{Erriez\+C\+R\+C32.\+c}}
+\subsubsection[{\texorpdfstring{crc32\+Final(uint32\+\_\+t crc)}{crc32Final(uint32_t crc)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t crc32\+Final (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{crc}
+\end{DoxyParamCaption}
+)}\hypertarget{_erriez_c_r_c32_8c_a86b00eb7f1d8dbcddd50d0210b29a4c3}{}\label{_erriez_c_r_c32_8c_a86b00eb7f1d8dbcddd50d0210b29a4c3}
+
+
+Finalize C\+R\+C32 output. 
+
+This function should be called after \hyperlink{_erriez_c_r_c32_8c_afb56d3040e9cf76ede38b02c963cdc2c}{crc32\+Update()}. This function is thread safe and maybe called from interrupt handlers. No buffer alignment needed. 
+\begin{DoxyParams}{Parameters}
+{\em crc} & Previous C\+R\+C32 value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+32-\/bit C\+RC value. 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file Erriez\+C\+R\+C32.\+c.
+
+\index{Erriez\+C\+R\+C32.\+c@{Erriez\+C\+R\+C32.\+c}!crc32\+String@{crc32\+String}}
+\index{crc32\+String@{crc32\+String}!Erriez\+C\+R\+C32.\+c@{Erriez\+C\+R\+C32.\+c}}
+\subsubsection[{\texorpdfstring{crc32\+String(const char $\ast$buffer)}{crc32String(const char *buffer)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t crc32\+String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{_erriez_c_r_c32_8c_a548a44aa16d59630321dd9618dfec05d}{}\label{_erriez_c_r_c32_8c_a548a44aa16d59630321dd9618dfec05d}
+
+
+Calculate C\+RC on a character string. 
+
+This function is thread safe and maybe called from interrupt handlers. No buffer alignment needed. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Null terminated character input array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+32-\/bit C\+RC value. 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file Erriez\+C\+R\+C32.\+c.
+
+\index{Erriez\+C\+R\+C32.\+c@{Erriez\+C\+R\+C32.\+c}!crc32\+Update@{crc32\+Update}}
+\index{crc32\+Update@{crc32\+Update}!Erriez\+C\+R\+C32.\+c@{Erriez\+C\+R\+C32.\+c}}
+\subsubsection[{\texorpdfstring{crc32\+Update(const void $\ast$buffer, size\+\_\+t buffer\+Length, uint32\+\_\+t crc)}{crc32Update(const void *buffer, size_t bufferLength, uint32_t crc)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t crc32\+Update (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buffer, }
+\item[{size\+\_\+t}]{buffer\+Length, }
+\item[{uint32\+\_\+t}]{crc}
+\end{DoxyParamCaption}
+)}\hypertarget{_erriez_c_r_c32_8c_afb56d3040e9cf76ede38b02c963cdc2c}{}\label{_erriez_c_r_c32_8c_afb56d3040e9cf76ede38b02c963cdc2c}
+
+
+Calculate C\+RC on multiple buffers. 
+
+This function is thread safe and maybe called from interrupt handlers. No buffer alignment needed. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Input buffer. No alignment needed. \\
+\hline
+{\em buffer\+Length} & Input buffer length in Bytes. No alignment needed. \\
+\hline
+{\em crc} & Previous C\+RC value. Call with crc = C\+R\+C32\+\_\+\+I\+N\+I\+T\+I\+AL on first calculation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+32-\/bit updated C\+RC value. 
+\end{DoxyReturn}
+
+
+Definition at line 85 of file Erriez\+C\+R\+C32.\+c.
+
