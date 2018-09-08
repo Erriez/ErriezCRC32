@@ -67,7 +67,7 @@ Benchmarks performed with the following versions:
 
 This library contains extensive unit tests on a various number of buffer types and lengths:
 
-* tests | [CRC32UnitTest](https://github.com/Erriez/ErriezCRC32/blob/master/examples/CRC32UnitTest/CRC32UnitTest.ino)
+* tests | [CRC32UnitTest](https://github.com/Erriez/ErriezCRC32/blob/master/tests/CRC32UnitTest/CRC32UnitTest.ino)
 
 
 ## Library documentation
