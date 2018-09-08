@@ -95,8 +95,13 @@ void benchmarkBuffer(uint16_t bufferLength, uint32_t expectedCRC)
     uint8_t buffer[1024];
     uint32_t crc;
 
+    // Check buffer length
+    if (bufferLength > sizeof(buffer)) {
+        bufferLength = sizeof(buffer);
+    }
+
     // Fill buffer
-    for (uint16_t i = 0; i < min(sizeof(buffer), bufferLength); i++) {
+    for (uint16_t i = 0; i < bufferLength; i++) {
         buffer[i] = i;
     }
 
