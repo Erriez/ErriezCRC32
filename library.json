@@ -1,0 +1,25 @@
+{
+    "name": "ErriezCRC32",
+    "version": "1.0.0",
+    "keywords": "Arduino, Library, CRC32, Small-footprint, Unittests, multi-target, benchmarks",
+    "description": "CRC32 library for Arduino without CRC tables. Target independent, flash and RAM size optimized.",
+    "homepage": "https://github.com/Erriez/ErriezCRC32",
+    "license": "MIT",
+    "authors": {
+        "name": "Erriez",
+        "url": "https://github.com/Erriez",
+        "maintainer": true
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Erriez/ErriezCRC32.git",
+        "branch": "master"
+    },
+    "frameworks": "arduino",
+    "platforms": [
+        "atmelavr",
+        "atmelsam",
+        "espressif8266",
+        "espressif32"
+    ]
+}
