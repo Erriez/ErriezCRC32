@@ -23,7 +23,7 @@
  */
 
 /*!
- * \brief crc example for Arduino
+ * \brief CRC32 example for Arduino
  * \details
  *      Source:         https://github.com/Erriez/ErriezCRC32
  *      Documentation:  https://erriez.github.io/ErriezCRC32
@@ -33,6 +33,7 @@
  *         http://www.sunshine2k.de/coding/javascript/crc/crc_js.html
  */
 
+#include <Arduino.h>
 #include <ErriezCRC32.h>
 
 // Function prototypes
@@ -42,7 +43,7 @@ void testSingleBuffer();
 void testMultipleStrings();
 void testMultipleBuffers();
 void checkCRC(uint32_t crcCalculated, uint32_t crcExpected);
-void printCRC32(uint32_t crc);
+void printCRC(uint32_t crc);
 
 
 void setup()
@@ -151,7 +152,7 @@ void printCRC(uint32_t crc)
     // workaround
     Serial.print("0x");
     for (int8_t i = 3; i >= 0; i--) {
-        uint8_t c = crc >> (i * 8);
+        uint8_t c = (uint8_t)(crc >> (i * 8));
         if (c < 0x10) {
             Serial.print("0");
         }
