@@ -91,16 +91,11 @@ $(function() {
 </ul>
 <h2>Hardware</h2>
 <p>This library can be used on any 8 or 32-bit target and is optimized for small flash/RAM footprints without CRC table allocations in RAM.</p>
-<h2>Examples</h2>
+<h2>Examples and benchmarks</h2>
 <p>Arduino IDE | Examples | Erriez CRC32:</p>
 <ul>
-<li><a href="https://github.com/Erriez/ErriezCRC32/blob/master/examples/CRC32/CRC32.ino">CRC32</a></li>
-<li>tests | <a href="https://github.com/Erriez/ErriezCRC32/blob/master/tests/CRC32UnitTest/CRC32UnitTest.ino">CRC32UnitTest</a></li>
-</ul>
-<h2>Benchmarks</h2>
-<p>Arduino IDE | Examples | Erriez CRC32:</p>
-<ul>
-<li>tests | <a href="https://github.com/Erriez/ErriezCRC32/blob/master/tests/CRC32Benchmark/CRC32Benchmark.ino">CRC32Benchmark</a></li>
+<li><a href="https://github.com/Erriez/ErriezCRC32/blob/master/examples/ErriezCRC32/ErriezCRC32.ino">ErriezCRC32</a></li>
+<li><a href="https://github.com/Erriez/ErriezCRC32/blob/master/examples/ErriezCRC32Benchmark/ErriezCRC32Benchmark.ino">ErriezCRC32Benchmark</a></li>
 </ul>
 <h4>Benchmark results on buffers</h4>
 <p>The benchmark results below may be different for each target and run. Lower duration means faster CRC calculation.</p>
@@ -126,7 +121,7 @@ $(function() {
 <h2>Unit tests</h2>
 <p>This library contains extensive unit tests on a various number of buffer types and lengths:</p>
 <ul>
-<li>tests | <a href="https://github.com/Erriez/ErriezCRC32/blob/master/tests/CRC32UnitTest/CRC32UnitTest.ino">CRC32UnitTest</a></li>
+<li><a href="https://github.com/Erriez/ErriezCRC32/blob/master/examples/ErriezCRC32UnitTest/ErriezCRC32UnitTest.ino">ErriezCRC32UnitTest</a></li>
 </ul>
 <h2>Library documentation</h2>
 <ul>
@@ -149,8 +144,8 @@ $(function() {
 <div class="fragment"><div class="line">{c++}</div><div class="line">void printCRC(uint32_t crc)</div><div class="line">{</div><div class="line">    Serial.print(&quot;0x&quot;);</div><div class="line">    for (int8_t i = 3; i &gt;= 0; i--) {</div><div class="line">        uint8_t c = crc &gt;&gt; (i * 8);</div><div class="line">        if (c &lt; 0x10) {</div><div class="line">            Serial.print(&quot;0&quot;);</div><div class="line">        }</div><div class="line">        Serial.print(c, HEX);</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --><p><b>CRC-calculation with Python</b></p>
 <div class="fragment"><div class="line">&gt;&gt;&gt; import binascii</div><div class="line">&gt;&gt;&gt; hex(binascii.crc32(b&#39;Hello world String!&#39;) &amp; 0xffffffff)</div><div class="line">&#39;0x55df869b&#39;</div></div><!-- fragment --><h2>Library dependencies</h2>
 <ul>
-<li>CRC32Benchmark.ino: <a href="https://github.com/Erriez/ErriezTimestamp.git">ErriezTimestamp.h</a></li>
-<li>CRC32UnitTest.ino: <a href="https://github.com/mmurdoch/arduinounit">ArduinoUnit.h</a></li>
+<li>ErriezCRC32Benchmark.ino: <a href="https://github.com/Erriez/ErriezTimestamp.git">ErriezTimestamp.h</a></li>
+<li>ErriezCRC32UnitTest.ino: <a href="https://github.com/mmurdoch/arduinounit">ArduinoUnit.h</a></li>
 </ul>
 <h2>Library installation</h2>
 <p>Please refer to the <a href="https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki">Wiki</a> page.</p>
