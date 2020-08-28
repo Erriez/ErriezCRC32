@@ -66,7 +66,7 @@ This library contains extensive unit tests on a various number of buffer types a
 ## Library documentation
 
 * [Doxygen online HTML](https://erriez.github.io/ErriezCRC32)
-* [Doxygen PDF](https://raw.githubusercontent.com/Erriez/ErriezCRC32/gh-pages/ErriezCRC32.pdf)
+* [Doxygen PDF](https://raw.githubusercontent.com/Erriez/ErriezCRC32/master/ErriezCRC32.pdf)
 
 
 ## Usage
