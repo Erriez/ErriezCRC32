@@ -24,9 +24,9 @@ function autobuild()
     platformio lib --global install https://github.com/mmurdoch/arduinounit.git
 
     echo "Building examples..."
-    platformio ci --lib="." ${BOARDS_AVR} ${BOARDS_ARM} ${BOARDS_ESP} examples/CRC32/CRC32.ino
-    platformio ci --lib="." ${BOARDS_AVR} ${BOARDS_ARM} ${BOARDS_ESP} tests/CRC32Benchmark/CRC32Benchmark.ino
-    platformio ci --lib="." ${BOARDS_AVR} ${BOARDS_ARM} ${BOARDS_ESP} tests/CRC32UnitTest/CRC32UnitTest.ino
+    platformio ci --lib="." ${BOARDS_AVR} ${BOARDS_ARM} ${BOARDS_ESP} examples/ErriezCRC32/ErriezCRC32.ino
+    platformio ci --lib="." ${BOARDS_AVR} ${BOARDS_ARM} ${BOARDS_ESP} examples/ErriezCRC32Benchmark/ErriezCRC32Benchmark.ino
+    platformio ci --lib="." ${BOARDS_AVR} ${BOARDS_ARM} ${BOARDS_ESP} examples/ErriezCRC32UnitTest/ErriezCRC32UnitTest.ino
 }
 
 function generate_doxygen()

@@ -30,19 +30,12 @@ This library can be used on any 8 or 32-bit target and is optimized for small fl
 without CRC table allocations in RAM.
 
 
-## Examples
+## Examples and benchmarks
 
 Arduino IDE | Examples | Erriez CRC32:
 
-* [CRC32](https://github.com/Erriez/ErriezCRC32/blob/master/examples/CRC32/CRC32.ino)
-* tests | [CRC32UnitTest](https://github.com/Erriez/ErriezCRC32/blob/master/tests/CRC32UnitTest/CRC32UnitTest.ino)
-
-
-## Benchmarks
-
-Arduino IDE | Examples | Erriez CRC32:
-
-* tests | [CRC32Benchmark](https://github.com/Erriez/ErriezCRC32/blob/master/tests/CRC32Benchmark/CRC32Benchmark.ino)
+* [ErriezCRC32](https://github.com/Erriez/ErriezCRC32/blob/master/examples/ErriezCRC32/ErriezCRC32.ino)
+* [ErriezCRC32Benchmark](https://github.com/Erriez/ErriezCRC32/blob/master/examples/ErriezCRC32Benchmark/ErriezCRC32Benchmark.ino)
 
 
 #### Benchmark results on buffers
@@ -67,7 +60,7 @@ Benchmarks performed with the following versions:
 
 This library contains extensive unit tests on a various number of buffer types and lengths:
 
-* tests | [CRC32UnitTest](https://github.com/Erriez/ErriezCRC32/blob/master/tests/CRC32UnitTest/CRC32UnitTest.ino)
+* [ErriezCRC32UnitTest](https://github.com/Erriez/ErriezCRC32/blob/master/examples/ErriezCRC32UnitTest/ErriezCRC32UnitTest.ino)
 
 
 ## Library documentation
@@ -198,8 +191,8 @@ void printCRC(uint32_t crc)
 
 ## Library dependencies
 
-* CRC32Benchmark.ino: [ErriezTimestamp.h](https://github.com/Erriez/ErriezTimestamp.git)
-* CRC32UnitTest.ino: [ArduinoUnit.h](https://github.com/mmurdoch/arduinounit)
+* ErriezCRC32Benchmark.ino: [ErriezTimestamp.h](https://github.com/Erriez/ErriezTimestamp.git)
+* ErriezCRC32UnitTest.ino: [ArduinoUnit.h](https://github.com/mmurdoch/arduinounit)
 
 
 ## Library installation
