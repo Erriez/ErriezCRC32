@@ -50,10 +50,9 @@ function generate_doxygen()
         make -C latex
 
         # Copy PDF to root directory
-        cp latex/refman.pdf ./${DOXYGEN_PDF}
+        cp latex/refman.pdf html/${DOXYGEN_PDF}
     fi
 }
 
 autobuild
 generate_doxygen
-
